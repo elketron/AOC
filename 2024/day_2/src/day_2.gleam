@@ -43,7 +43,7 @@ pub fn solution(input: List(List(Int))) -> Int {
 }
 
 pub fn is_valid(input: List(Int)) -> Bool {
-  is_ok(input) && !difference_smaller_than(input, 4)
+  is_ok(input) || !difference_smaller_than(input, 4)
 }
 
 pub fn is_ok(input: List(Int)) -> Bool {
